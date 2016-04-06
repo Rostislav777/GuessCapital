@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">GiessCapital</string>
+    <string name="greeting">Hello World!!!</string>
+    <string name="main_question">What capital do you know?</string>
+    <string name="main_content">Please select..</string>
+    <string name="main_buttonBeginner">Beginner</string>
+    <string name="main_buttonExpert">Expert</string>
+    <string name="main_buttonKing">King geograpy</string>
+    <string name="beginner_question">What is the capital of Ukraine?</string>
+    <string name="beginner_button_1">Kiev</string>
+    <string name="beginner_button_2">Lviv</string>
+    <string name="beginner_button_3">Kharkiv</string>
+</resources>
