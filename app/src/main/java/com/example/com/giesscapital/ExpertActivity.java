@@ -50,7 +50,7 @@ public class ExpertActivity extends Activity {
             expertButton_1.setText("Helsinki");
             expertButton_2.setText("Madrid");
             expertButton_3.setText("Oslo");
-            
+
         }
 
         else if (numberQuestions == 2) {
