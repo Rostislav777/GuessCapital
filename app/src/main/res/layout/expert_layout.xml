@@ -1,6 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
+    <LinearLayout
+        android:id="@+id/linearLayout_img"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="30"
+        android:background="@drawable/canada"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textExpertQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50sp"
+            android:background="#83000000"
+            android:text="@string/expert_question"
+            android:textColor="#ffffff"
+            android:textSize="28sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="70"
+        android:background="#338a30"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonIdExpert_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20sp"
+            android:background="#2183c9"
+            android:onClick="onExpertButtonClick"
+            android:padding="14dp"
+            android:text="@string/expert_button_1"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/buttonIdExpert_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonIdExpert_1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40sp"
+            android:background="#2183c9"
+            android:onClick="onExpertButtonClick"
+            android:padding="14dp"
+            android:text="@string/expert_button_2"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/buttonIdExpert_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonIdExpert_2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40sp"
+            android:background="#2183c9"
+            android:onClick="onExpertButtonClick"
+            android:padding="14dp"
+            android:text="@string/expert_button_3"
+            android:textSize="26sp" />
+    </LinearLayout>
 </LinearLayout>

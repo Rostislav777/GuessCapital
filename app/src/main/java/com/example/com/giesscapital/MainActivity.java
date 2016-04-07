@@ -17,4 +17,9 @@ public class MainActivity extends Activity {
         Intent intent = new Intent(this, BeginnerActivity.class);
         startActivity(intent);
     }
+
+    public void goToExpertActivity(View view) {
+        Intent intent = new Intent(this, ExpertActivity.class);
+        startActivity(intent);
+    }
 }

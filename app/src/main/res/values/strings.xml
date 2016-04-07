@@ -10,4 +10,9 @@
     <string name="beginner_button_1">Kiev</string>
     <string name="beginner_button_2">Lviv</string>
     <string name="beginner_button_3">Kharkiv</string>
+    <string name="expert_question">What is the capital of Canada?</string>
+    <string name="expert_question_2">What is the capital of Norway?</string>
+    <string name="expert_button_1">New York</string>
+    <string name="expert_button_2">Ottawa</string>
+    <string name="expert_button_3">Los Angeles</string>
 </resources>
