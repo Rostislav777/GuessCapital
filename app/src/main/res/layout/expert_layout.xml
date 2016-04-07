@@ -29,7 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="20dp"
         android:layout_weight="70"
-        android:background="#338a30"
+        android:background="#5d8a30"
         android:orientation="vertical">
 
         <Button
