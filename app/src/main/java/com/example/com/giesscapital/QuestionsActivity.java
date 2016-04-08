@@ -7,21 +7,29 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-public class ExpertActivity extends Activity {
+import java.util.HashMap;
+import java.util.Map;
+
+public class QuestionsActivity extends Activity {
+    private Map<Integer, String> questionsMap = new HashMap<>();
     private int[] ExpertState = new int[10];
-
     private int numberQuestions = 0;
-
     private LinearLayout mLinearLayout;
     private TextView mInfoTextView;
     private Button  expertButton_1;
     private Button  expertButton_2;
     private Button  expertButton_3;
 
+    {
+        questionsMap.put(1, "Столица Китая?");
+        questionsMap.put(2, "Столица Венгрии?");
+        questionsMap.put(3, "Столица Украины");
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.expert_layout);
+        setContentView(R.layout.questions_layout);
 
         mLinearLayout = (LinearLayout) findViewById(R.id.linearLayout_img);
         mInfoTextView = (TextView) findViewById(R.id.textExpertQuestion);
@@ -33,6 +41,10 @@ public class ExpertActivity extends Activity {
     }
 
     public void onExpertButtonClick(View view) {
+
+    }
+
+   /* public void onExpertButtonClick(View view) {
 
         numberQuestions ++;
 
@@ -51,38 +63,6 @@ public class ExpertActivity extends Activity {
             expertButton_2.setText("Madrid");
             expertButton_3.setText("Oslo");
 
-        }
-
-        else if (numberQuestions == 2) {
-
-            mInfoTextView.setText(R.string.expert_question_3);
-
-            final int sdk = android.os.Build.VERSION.SDK_INT;
-            if (sdk < android.os.Build.VERSION_CODES.JELLY_BEAN) {
-                mLinearLayout.setBackgroundDrawable(getResources().getDrawable(R.drawable.argentina));
-            } else {
-                mLinearLayout.setBackground(getResources().getDrawable(R.drawable.argentina));
-            }
-
-            expertButton_1.setText("Buenos Aires");
-            expertButton_2.setText("Mexico");
-            expertButton_3.setText("Caracas");
-        }
-
-        else if (numberQuestions == 3) {
-
-            mInfoTextView.setText(R.string.expert_question_4);
-
-            final int sdk = android.os.Build.VERSION.SDK_INT;
-            if (sdk < android.os.Build.VERSION_CODES.JELLY_BEAN) {
-                mLinearLayout.setBackgroundDrawable(getResources().getDrawable(R.drawable.australia));
-            } else {
-                mLinearLayout.setBackground(getResources().getDrawable(R.drawable.australia));
-            }
-
-            expertButton_1.setText("Sydney");
-            expertButton_2.setText("Melbourne");
-            expertButton_3.setText("Canberr");
-        }
+      */
     }
-}
+

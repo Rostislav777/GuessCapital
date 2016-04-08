@@ -15,19 +15,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".BeginnerActivity">
-
-        </activity>
-
-        <activity android:name=".BeginnerActivity_st2">
-
-        </activity>
-
-        <activity android:name=".BeginnerActivity_st3">
-
-        </activity>
-
-        <activity android:name=".ExpertActivity" />
+        <activity android:name=".QuestionsActivity" />
 
     </application>
 
